@@ -94,9 +94,17 @@
   </select>
   
   <select id="queryMenusByUid" parameterType="int" resultType="String"> 
-  	select t3.menu_power from menu t3 where menuid in (
+  	select t3.menu_desc from menu t3 where menu_id in (
   		select menu_id from role_menu where role_id in (
   			select t1.role_id from user_role t1 where user_id = #{userid}
+  			)
+  		)	
+  </select>
+  
+  <select id="queryMenusByUsername" parameterType="String" resultType="String"> 
+  	select t3.menu_desc from menu t3 where menu_id in (
+  		select menu_id from role_menu where role_id in (
+  			select t1.role_id from user_role t1 where user_id = (select t4.user_id from user t4 where username = #{username})
   			)
   		)	
   </select>

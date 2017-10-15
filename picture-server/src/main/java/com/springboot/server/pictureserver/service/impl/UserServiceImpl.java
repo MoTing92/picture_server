@@ -62,4 +62,10 @@ public class UserServiceImpl implements IUserService {
 		return userMapper.queryMenusByUid(userId);
 	}
 
+	@Override
+	public List<String> queryMenusByUsername(String username) {
+		// TODO Auto-generated method stub
+		return userMapper.queryMenusByUsername(username);
+	}
+
 }

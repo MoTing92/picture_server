@@ -45,4 +45,6 @@ public interface UserMapper {
 	User findUserByUserName(String username);
 
 	List<String> queryMenusByUid(Integer userId);
+
+	List<String> queryMenusByUsername(String username);
 }

@@ -6,10 +6,13 @@ import javax.servlet.http.HttpSession;
 
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.AuthorizationException;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
 import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.springboot.server.pictureserver.model.User;
 import com.springboot.server.pictureserver.service.IUserService;
@@ -22,9 +25,32 @@ public class UserController {
 	private IUserService userService;
 	
 	@RequestMapping("/query")
-	public List<User> query(User user){
-		List<User> userList = userService.query(null);
-		return userList;
+	@ResponseBody
+	@RequiresPermissions("USER_QUERY")
+	public String query(User user){
+		try {
+			List<User> userList = userService.query(null);
+			return userList.toString();
+		} catch (AuthorizationException e) {
+			return "refuse";
+		} catch (Exception e) {
+			return "refuse";
+		}
+		
+	}
+	
+	@RequestMapping("/add")
+	@ResponseBody
+	@RequiresPermissions("USER_ADD")
+	public String add(User user){
+		try {
+			List<User> userList = userService.query(null);
+			return userList.toString();
+		} catch (AuthorizationException e) {
+			return "refuse";
+		} catch (Exception e) {
+			return "refuse";
+		}
 	}
 	
 	@RequestMapping("/login")

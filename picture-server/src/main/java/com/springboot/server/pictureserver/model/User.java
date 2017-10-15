@@ -47,4 +47,10 @@ public class User implements Serializable{
     public void setRealName(String realName) {
         this.realName = realName == null ? null : realName.trim();
     }
+    
+    @Override
+	public String toString() {
+		return "User [userId=" + userId + ", username=" + username
+				+ ", password=" + password + ", realName=" + realName + "]";
+	}
 }

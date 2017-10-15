@@ -18,6 +18,8 @@ public interface IUserService {
 	User findUserByUserName(String username);
 
 	List<String> queryMenusByUid(Integer userId);
+
+	List<String> queryMenusByUsername(String username);
 	
 	
 }

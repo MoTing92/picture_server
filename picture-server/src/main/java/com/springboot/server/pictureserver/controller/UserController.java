@@ -99,7 +99,8 @@ public class UserController {
         UsernamePasswordToken usernamePasswordToken=new UsernamePasswordToken(username,password);
         Subject subject = SecurityUtils.getSubject();
         try {
-            subject.login(usernamePasswordToken);   //完成登录
+        	//完成登录
+        	subject.login(usernamePasswordToken);   
             User user=(User) subject.getPrincipal();
             session.setAttribute("user", user);
             return "index";
@@ -113,7 +114,7 @@ public class UserController {
     public String logOut(HttpSession session) {
         Subject subject = SecurityUtils.getSubject();
         subject.logout();
-//        session.removeAttribute("user");
+        session.removeAttribute("user");
         return "login";
     }
 } 

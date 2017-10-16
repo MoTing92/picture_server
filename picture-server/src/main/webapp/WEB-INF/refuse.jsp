@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h2>抱歉，您没有该页面的访问权限</h2>
+	<h2>${msg }抱歉，您没有该页面的访问权限</h2>
 </body>
 </html>

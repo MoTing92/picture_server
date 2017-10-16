@@ -53,6 +53,34 @@ public class UserController {
 		}
 	}
 	
+	@RequestMapping("/update")
+	@ResponseBody
+	@RequiresPermissions("USER_UPDATE")
+	public String update(User user){
+		try {
+			List<User> userList = userService.query(null);
+			return userList.toString();
+		} catch (AuthorizationException e) {
+			return "refuse";
+		} catch (Exception e) {
+			return "refuse";
+		}
+	}
+	
+	@RequestMapping("/delete")
+	@ResponseBody
+	@RequiresPermissions("USER_DELETE")
+	public String delete(User user){
+		try {
+			List<User> userList = userService.query(null);
+			return userList.toString();
+		} catch (AuthorizationException e) {
+			return "refuse";
+		} catch (Exception e) {
+			return "refuse";
+		}
+	}
+	
 	@RequestMapping("/login")
     public String login() {
         return "login";
@@ -60,7 +88,7 @@ public class UserController {
 	
     @RequestMapping("/loginUser")
     public String loginUser(String username,String password,HttpSession session) {
-        System.out.println("开始登陆认证");
+        System.out.println("开始登陆认证……");
     	UsernamePasswordToken usernamePasswordToken=new UsernamePasswordToken(username,password);
         Subject subject = SecurityUtils.getSubject();
         try {
@@ -68,6 +96,7 @@ public class UserController {
         	subject.login(usernamePasswordToken);   
             User user=(User) subject.getPrincipal();
             session.setAttribute("user", user);
+            System.err.println("登录成功");
             return "index";
         } catch(Exception e) {
         	e.printStackTrace();

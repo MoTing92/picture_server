@@ -28,6 +28,7 @@ public class AuthRealm extends AuthorizingRealm {
         String username = utoken.getUsername();
         User user = userService.findUserByUserName(username);
         //放入shiro.调用CredentialsMatcher检验密码
+        System.err.println("登录用户信息：");
         System.out.println(user.toString());
         SimpleAuthenticationInfo info = new SimpleAuthenticationInfo(user, user.getPassword(),this.getClass().getName());
         return info;
@@ -41,6 +42,7 @@ public class AuthRealm extends AuthorizingRealm {
 //        User user2 = userService.findUserByUserName(user.getUsername());
 //		List<String> permissions = userService.queryMenusByUid(user2.getUserId());
         List<String> permissions = userService.queryMenusByUsername(user.getUsername());
+        System.err.println("当前登录用户所拥有的所有角色：");
         System.out.println(permissions.toString());
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 

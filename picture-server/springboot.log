@@ -6146,3 +6146,791 @@ org.apache.shiro.authz.AuthorizationException: Not authorized to invoke method: 
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
 	at java.lang.Thread.run(Unknown Source) [na:1.8.0_111]
 
+2017-10-16 16:05:46.308  INFO 4696 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 4696 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:05:46.339  INFO 4696 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:05:46.465  INFO 4696 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:05:46 CST 2017]; root of context hierarchy
+2017-10-16 16:05:48.155  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$37e070a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.228  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.249  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$69f4c8bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.311  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.764  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.915  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.915  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.915  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.915  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:48.915  INFO 4696 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:05:48.915  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:51.183  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:51.183  INFO 4696 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:05:51.247  INFO 4696 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:05:51.279  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:51.419  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:51.435  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:51.450  INFO 4696 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1951c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:05:51.978  INFO 4696 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:05:51.993  INFO 4696 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:05:51.993  INFO 4696 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:05:52.243  INFO 4696 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:05:52.243  INFO 4696 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:05:52.243  INFO 4696 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5778 ms
+2017-10-16 16:05:52.447  INFO 4696 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:05:52.447  INFO 4696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:05:52.447  INFO 4696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:05:52.447  INFO 4696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:05:52.447  INFO 4696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:05:52.447  INFO 4696 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:05:52.868  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:05:46 CST 2017]; root of context hierarchy
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:05:52.961  INFO 4696 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:05:52.993  INFO 4696 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:05:53.008  INFO 4696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:05:53.008  INFO 4696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:05:53.008  INFO 4696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:05:53.055  INFO 4696 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:05:53.336 ERROR 4696 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-16 16:05:53.336 ERROR 4696 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [log4j]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]]
+2017-10-16 16:05:53.336  WARN 4696 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [log4j]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]]
+2017-10-16 16:05:53.351  INFO 4696 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-16 16:05:53.402  INFO 4696 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-16 16:05:53.402 ERROR 4696 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.mybatis.spring.boot.autoconfigure.MybatisProperties@21618fa7 failed:
+
+    Property: mybatis.configuration.logImpl
+    Value: log4j
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-16 16:12:36.360  INFO 2724 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 2724 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:12:36.360  INFO 2724 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:12:36.422  INFO 2724 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15d9bc04: startup date [Mon Oct 16 16:12:36 CST 2017]; root of context hierarchy
+2017-10-16 16:12:38.393  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$37e070a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.441  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.472  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$69f4c8bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.535  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.706  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.722  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.722  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.722  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.722  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:38.722  INFO 2724 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:12:38.722  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:39.922  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:39.922  INFO 2724 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:12:39.963  INFO 2724 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:12:39.974  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:40.042  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:40.074  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:40.076  INFO 2724 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1951c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:12:40.449  INFO 2724 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:12:40.465  INFO 2724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:12:40.465  INFO 2724 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:12:40.673  INFO 2724 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:12:40.688  INFO 2724 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:12:40.688  INFO 2724 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4266 ms
+2017-10-16 16:12:40.883  INFO 2724 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:12:40.899  INFO 2724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:12:40.899  INFO 2724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:12:40.899  INFO 2724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:12:40.899  INFO 2724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:12:40.899  INFO 2724 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:12:41.897  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@15d9bc04: startup date [Mon Oct 16 16:12:36 CST 2017]; root of context hierarchy
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:12:42.023  INFO 2724 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:12:42.070  INFO 2724 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:12:42.101  INFO 2724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:12:42.101  INFO 2724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:12:42.101  INFO 2724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:12:42.163  INFO 2724 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:12:42.351 ERROR 2724 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-16 16:12:42.351 ERROR 2724 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [log4j]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]]
+2017-10-16 16:12:42.351  WARN 2724 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [log4j]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]]
+2017-10-16 16:12:42.522  INFO 2724 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-16 16:12:42.678  INFO 2724 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-16 16:12:42.678 ERROR 2724 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.mybatis.spring.boot.autoconfigure.MybatisProperties@21618fa7 failed:
+
+    Property: mybatis.configuration.logImpl
+    Value: log4j
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-16 16:15:43.322  INFO 8084 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 8084 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:15:43.324  INFO 8084 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:15:43.397  INFO 8084 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:15:43 CST 2017]; root of context hierarchy
+2017-10-16 16:15:44.492  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$a47152bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.558  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.590  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$d685aad5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.655  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.843  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.853  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.853  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.855  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.858  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:44.858  INFO 8084 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:15:44.858  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:46.051  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:46.051  INFO 8084 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:15:46.075  INFO 8084 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:15:46.085  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:46.162  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:46.180  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:46.185  INFO 8084 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2e25fe9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:15:46.585  INFO 8084 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:15:46.597  INFO 8084 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:15:46.600  INFO 8084 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:15:46.860  INFO 8084 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:15:46.865  INFO 8084 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:15:46.865  INFO 8084 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3478 ms
+2017-10-16 16:15:47.077  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:15:47.080  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:15:47.082  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:15:47.082  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:15:47.082  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:15:47.082  INFO 8084 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:15:47.593  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:15:43 CST 2017]; root of context hierarchy
+2017-10-16 16:15:47.686  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:15:47.686  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:15:47.688  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:15:47.688  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:15:47.688  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:15:47.688  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:15:47.688  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:15:47.691  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:15:47.693  INFO 8084 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:15:48.116  INFO 8084 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:15:48.126  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:15:48.126  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:15:48.126  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:15:48.195  INFO 8084 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:15:48.631  WARN 8084 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.beans.NullValueInNestedPathException: Invalid property 'configuration.logImpl' of bean class [org.mybatis.spring.boot.autoconfigure.MybatisProperties]: Could not instantiate property type [java.lang.Class] to auto-grow nested property path; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Class]: Is the constructor accessible?; nested exception is java.lang.IllegalAccessException: Can not call newInstance() on the Class for java.lang.Class
+2017-10-16 16:15:48.643  INFO 8084 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-16 16:15:48.686  INFO 8084 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-16 16:15:48.943 ERROR 8084 --- [main] o.s.boot.SpringApplication               : Application startup failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.beans.NullValueInNestedPathException: Invalid property 'configuration.logImpl' of bean class [org.mybatis.spring.boot.autoconfigure.MybatisProperties]: Could not instantiate property type [java.lang.Class] to auto-grow nested property path; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Class]: Is the constructor accessible?; nested exception is java.lang.IllegalAccessException: Can not call newInstance() on the Class for java.lang.Class
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:749) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:189) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1193) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1095) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:761) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107) [spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at com.springboot.server.pictureserver.PictureServerApplication.main(PictureServerApplication.java:10) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.beans.NullValueInNestedPathException: Invalid property 'configuration.logImpl' of bean class [org.mybatis.spring.boot.autoconfigure.MybatisProperties]: Could not instantiate property type [java.lang.Class] to auto-grow nested property path; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Class]: Is the constructor accessible?; nested exception is java.lang.IllegalAccessException: Can not call newInstance() on the Class for java.lang.Class
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:334) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:291) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:409) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1620) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:208) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1138) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1066) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:835) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:741) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 19 common frames omitted
+Caused by: org.springframework.beans.NullValueInNestedPathException: Invalid property 'configuration.logImpl' of bean class [org.mybatis.spring.boot.autoconfigure.MybatisProperties]: Could not instantiate property type [java.lang.Class] to auto-grow nested property path; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Class]: Is the constructor accessible?; nested exception is java.lang.IllegalAccessException: Can not call newInstance() on the Class for java.lang.Class
+	at org.springframework.beans.AbstractNestablePropertyAccessor.newValue(AbstractNestablePropertyAccessor.java:933) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.createDefaultPropertyValue(AbstractNestablePropertyAccessor.java:901) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setDefaultValue(AbstractNestablePropertyAccessor.java:889) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getNestedPropertyAccessor(AbstractNestablePropertyAccessor.java:853) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyAccessorForPropertyPath(AbstractNestablePropertyAccessor.java:827) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.getPropertyAccessorForPropertyPath(AbstractNestablePropertyAccessor.java:828) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.setPropertyValue(AbstractNestablePropertyAccessor.java:270) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanWrapper.setPropertyValue(RelaxedDataBinder.java:699) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:95) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.validation.DataBinder.applyPropertyValues(DataBinder.java:859) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.validation.DataBinder.doBind(DataBinder.java:755) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.bind.RelaxedDataBinder.doBind(RelaxedDataBinder.java:128) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.validation.DataBinder.bind(DataBinder.java:740) ~[spring-context-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.doBindPropertiesToTarget(PropertiesConfigurationFactory.java:272) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.bind.PropertiesConfigurationFactory.bindPropertiesToTarget(PropertiesConfigurationFactory.java:240) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	at org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor.postProcessBeforeInitialization(ConfigurationPropertiesBindingPostProcessor.java:329) ~[spring-boot-1.5.7.RELEASE.jar:1.5.7.RELEASE]
+	... 33 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [java.lang.Class]: Is the constructor accessible?; nested exception is java.lang.IllegalAccessException: Can not call newInstance() on the Class for java.lang.Class
+	at org.springframework.beans.BeanUtils.instantiate(BeanUtils.java:83) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.beans.AbstractNestablePropertyAccessor.newValue(AbstractNestablePropertyAccessor.java:928) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 48 common frames omitted
+Caused by: java.lang.IllegalAccessException: Can not call newInstance() on the Class for java.lang.Class
+	at java.lang.Class.newInstance(Unknown Source) ~[na:1.8.0_111]
+	at org.springframework.beans.BeanUtils.instantiate(BeanUtils.java:77) ~[spring-beans-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	... 49 common frames omitted
+
+2017-10-16 16:16:28.960  INFO 5988 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 5988 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:16:28.963  INFO 5988 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:16:29.060  INFO 5988 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:16:29 CST 2017]; root of context hierarchy
+2017-10-16 16:16:30.310  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$37e070a5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.377  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.421  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$69f4c8bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.481  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.683  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.693  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.696  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.696  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.698  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:30.698  INFO 5988 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:16:30.698  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:31.912  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:31.912  INFO 5988 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:16:31.938  INFO 5988 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:16:31.950  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:32.008  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:32.035  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:32.040  INFO 5988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c1951c85] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:16:32.465  INFO 5988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:16:32.480  INFO 5988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:16:32.483  INFO 5988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:16:32.718  INFO 5988 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:16:32.723  INFO 5988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:16:32.723  INFO 5988 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3668 ms
+2017-10-16 16:16:32.923  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:16:32.928  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:16:32.928  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:16:32.928  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:16:32.928  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:16:32.930  INFO 5988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:16:33.339  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:16:29 CST 2017]; root of context hierarchy
+2017-10-16 16:16:33.419  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:16:33.419  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:16:33.421  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:16:33.421  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:16:33.421  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:16:33.421  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:16:33.421  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:16:33.426  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:16:33.426  INFO 5988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:16:33.476  INFO 5988 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:16:33.496  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:16:33.496  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:16:33.496  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:16:33.546  INFO 5988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:16:33.879 ERROR 5988 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-16 16:16:33.879 ERROR 5988 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [log4j]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]]
+2017-10-16 16:16:33.879  WARN 5988 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [log4j]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]]
+2017-10-16 16:16:33.889  INFO 5988 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-16 16:16:33.911  INFO 5988 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-16 16:16:33.916 ERROR 5988 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.mybatis.spring.boot.autoconfigure.MybatisProperties@21618fa7 failed:
+
+    Property: mybatis.configuration.logImpl
+    Value: log4j
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [log4j]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-16 16:17:31.878  INFO 7196 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 7196 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:17:31.880  INFO 7196 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:17:31.945  INFO 7196 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:17:31 CST 2017]; root of context hierarchy
+2017-10-16 16:17:33.030  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$9096e0ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.104  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.139  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$c2ab3905] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.204  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.374  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.384  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.384  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.386  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.389  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:33.389  INFO 7196 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:17:33.389  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:34.602  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:34.602  INFO 7196 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:17:34.623  INFO 7196 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:17:34.628  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:34.681  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:34.696  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:34.703  INFO 7196 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a4b8ccd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:17:35.088  INFO 7196 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:17:35.098  INFO 7196 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:17:35.101  INFO 7196 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:17:35.333  INFO 7196 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:17:35.341  INFO 7196 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:17:35.341  INFO 7196 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3401 ms
+2017-10-16 16:17:35.541  INFO 7196 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:17:35.543  INFO 7196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:17:35.546  INFO 7196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:17:35.546  INFO 7196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:17:35.546  INFO 7196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:17:35.546  INFO 7196 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:17:35.951  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@28c4711c: startup date [Mon Oct 16 16:17:31 CST 2017]; root of context hierarchy
+2017-10-16 16:17:36.039  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:17:36.039  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:17:36.042  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:17:36.042  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:17:36.042  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:17:36.044  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:17:36.044  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:17:36.047  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:17:36.047  INFO 7196 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:17:36.134  INFO 7196 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:17:36.142  INFO 7196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:17:36.142  INFO 7196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:17:36.144  INFO 7196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:17:36.207  INFO 7196 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:17:36.507 ERROR 7196 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-16 16:17:36.507 ERROR 7196 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [LOG4J]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [LOG4J]]
+2017-10-16 16:17:36.509  WARN 7196 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [LOG4J]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [LOG4J]]
+2017-10-16 16:17:36.517  INFO 7196 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-16 16:17:36.547  INFO 7196 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-16 16:17:36.549 ERROR 7196 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.mybatis.spring.boot.autoconfigure.MybatisProperties@724c5cbe failed:
+
+    Property: mybatis.configuration.logImpl
+    Value: LOG4J
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [LOG4J]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-16 16:27:21.297  INFO 5652 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 5652 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:27:21.313  INFO 5652 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:27:21.359  INFO 5652 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 16:27:21 CST 2017]; root of context hierarchy
+2017-10-16 16:27:22.390  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$9ddfacf8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.454  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.500  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$cff40510] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.547  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.719  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.719  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.719  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.734  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.734  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:22.734  INFO 5652 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:27:22.734  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:24.105  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:24.105  INFO 5652 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:27:24.153  INFO 5652 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:27:24.169  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:24.247  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:24.434  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:24.449  INFO 5652 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$279458d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:27:25.199  INFO 5652 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:27:25.215  INFO 5652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:27:25.215  INFO 5652 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:27:25.615  INFO 5652 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:27:25.631  INFO 5652 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:27:25.631  INFO 5652 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4272 ms
+2017-10-16 16:27:26.105  INFO 5652 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:27:26.105  INFO 5652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:27:26.121  INFO 5652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:27:26.121  INFO 5652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:27:26.121  INFO 5652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:27:26.121  INFO 5652 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:27:26.729  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 16:27:21 CST 2017]; root of context hierarchy
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:27:26.793  INFO 5652 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:27:26.840  INFO 5652 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:27:26.855  INFO 5652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:27:26.855  INFO 5652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:27:26.855  INFO 5652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:27:26.902  INFO 5652 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:27:27.052 ERROR 5652 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Properties configuration failed validation
+2017-10-16 16:27:27.052 ERROR 5652 --- [main] o.s.b.b.PropertiesConfigurationFactory   : Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [LOG4J]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [LOG4J]]
+2017-10-16 16:27:27.052  WARN 5652 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mybatis-org.mybatis.spring.boot.autoconfigure.MybatisProperties': Could not bind properties to MybatisProperties (prefix=mybatis, ignoreInvalidFields=false, ignoreUnknownFields=true, ignoreNestedProperties=false); nested exception is org.springframework.validation.BindException: org.springframework.boot.bind.RelaxedDataBinder$RelaxedBeanPropertyBindingResult: 1 errors
+Field error in object 'mybatis' on field 'configuration.logImpl': rejected value [LOG4J]; codes [typeMismatch.mybatis.configuration.logImpl,typeMismatch.configuration.logImpl,typeMismatch.logImpl,typeMismatch.java.lang.Class,typeMismatch]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [mybatis.configuration.logImpl,configuration.logImpl]; arguments []; default message [configuration.logImpl]]; default message [Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [LOG4J]]
+2017-10-16 16:27:27.146  INFO 5652 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2017-10-16 16:27:27.177  INFO 5652 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-10-16 16:27:27.177 ERROR 5652 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.mybatis.spring.boot.autoconfigure.MybatisProperties@70e889e9 failed:
+
+    Property: mybatis.configuration.logImpl
+    Value: LOG4J
+    Reason: Failed to convert property value of type 'java.lang.String' to required type 'java.lang.Class' for property 'configuration.logImpl'; nested exception is java.lang.IllegalArgumentException: Cannot find class [LOG4J]
+
+
+Action:
+
+Update your application's configuration
+
+2017-10-16 16:33:55.455  INFO 7348 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 7348 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 16:33:55.455  INFO 7348 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 16:33:55.502  INFO 7348 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 16:33:55 CST 2017]; root of context hierarchy
+2017-10-16 16:33:56.563  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$8fba75b3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.628  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.675  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$c1cecdcb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.737  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.903  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.950  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.950  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.950  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.950  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:56.950  INFO 7348 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 16:33:56.950  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:59.187  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:59.187  INFO 7348 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 16:33:59.202  INFO 7348 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 16:33:59.281  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:59.328  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:59.359  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:59.359  INFO 7348 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$196f2193] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 16:33:59.946  INFO 7348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 16:33:59.962  INFO 7348 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 16:33:59.962  INFO 7348 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 16:34:00.539  INFO 7348 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 16:34:00.570  INFO 7348 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 16:34:00.570  INFO 7348 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5068 ms
+2017-10-16 16:34:00.774  INFO 7348 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 16:34:00.789  INFO 7348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 16:34:00.789  INFO 7348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-10-16 16:34:00.789  INFO 7348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-10-16 16:34:00.789  INFO 7348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-10-16 16:34:00.789  INFO 7348 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 16:34:01.169  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 16:33:55 CST 2017]; root of context hierarchy
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.update(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/delete]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.delete(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 16:34:01.262  INFO 7348 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 16:34:01.309  INFO 7348 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 16:34:01.309  INFO 7348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:34:01.309  INFO 7348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:34:01.309  INFO 7348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:34:01.372  INFO 7348 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 16:34:01.969  INFO 7348 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-16 16:34:01.969  INFO 7348 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-10-16 16:34:01.985  INFO 7348 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-10-16 16:34:02.563  INFO 7348 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-10-16 16:34:02.563  INFO 7348 --- [main] c.s.s.p.PictureServerApplication         : Started PictureServerApplication in 7.389 seconds (JVM running for 7.71)
+2017-10-16 16:34:21.829  INFO 7348 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-16 16:34:21.829  INFO 7348 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-16 16:34:21.863  INFO 7348 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-10-16 16:34:43.210  INFO 7348 --- [http-nio-8081-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-10-16 16:38:06.870 ERROR 7348 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.apache.shiro.authz.UnauthorizedException: Subject does not have permission [USER_QUERY]] with root cause
+
+org.apache.shiro.authz.AuthorizationException: Not authorized to invoke method: public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+	at org.apache.shiro.authz.aop.AuthorizingAnnotationMethodInterceptor.assertAuthorized(AuthorizingAnnotationMethodInterceptor.java:90) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.authz.aop.AnnotationsAuthorizingMethodInterceptor.assertAuthorized(AnnotationsAuthorizingMethodInterceptor.java:100) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.authz.aop.AuthorizingMethodInterceptor.invoke(AuthorizingMethodInterceptor.java:38) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.spring.security.interceptor.AopAllianceAnnotationsAuthorizingMethodInterceptor.invoke(AopAllianceAnnotationsAuthorizingMethodInterceptor.java:115) ~[shiro-spring-1.2.2.jar:1.2.2]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:673) ~[spring-aop-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at com.springboot.server.pictureserver.controller.UserController$$EnhancerBySpringCGLIB$$5939f49d.query(<generated>) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_111]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_111]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_111]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_111]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_111]
+
+2017-10-16 17:14:13.571  INFO 2672 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 2672 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 17:14:13.571  INFO 2672 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 17:14:13.633  INFO 2672 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 17:14:13 CST 2017]; root of context hierarchy
+2017-10-16 17:14:14.772  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$55d63e0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:14.828  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:14.874  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$87ea9625] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:14.937  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:15.098  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:15.113  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:15.113  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:15.113  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy53] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:15.113  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:15.113  INFO 2672 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 17:14:15.113  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:16.287  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:16.287  INFO 2672 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 17:14:16.303  INFO 2672 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 17:14:16.320  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:16.383  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:16.398  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:16.398  INFO 2672 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$df8ae9ed] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:14:16.819  INFO 2672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 17:14:16.835  INFO 2672 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 17:14:16.851  INFO 2672 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 17:14:17.069  INFO 2672 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 17:14:17.069  INFO 2672 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 17:14:17.069  INFO 2672 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3436 ms
+2017-10-16 17:14:17.241  INFO 2672 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 17:14:17.241  INFO 2672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 17:14:17.241  INFO 2672 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 17:14:17.631  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 17:14:17.677  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.update(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/delete]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.delete(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 17:14:17.709  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 17:14:17.725  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 17:14:17.725  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 17:14:17.897  INFO 2672 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 17:14:17.912  INFO 2672 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 17:14:17.959  INFO 2672 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 17:14:13 CST 2017]; root of context hierarchy
+2017-10-16 17:14:19.956  INFO 2672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-16 17:14:19.956  INFO 2672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-10-16 17:14:19.956  INFO 2672 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-10-16 17:14:20.457  INFO 2672 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-10-16 17:14:20.457  INFO 2672 --- [main] c.s.s.p.PictureServerApplication         : Started PictureServerApplication in 7.183 seconds (JVM running for 7.538)
+2017-10-16 17:15:31.183  INFO 6780 --- [main] c.s.s.p.PictureServerApplication         : Starting PictureServerApplication on PC-20170506TCHA with PID 6780 (E:\STS\workspace\spring-cloud\picture-server\target\classes started by Administrator in E:\STS\workspace\spring-cloud\picture-server)
+2017-10-16 17:15:31.183  INFO 6780 --- [main] c.s.s.p.PictureServerApplication         : No active profile set, falling back to default profiles: default
+2017-10-16 17:15:31.261  INFO 6780 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 17:15:31 CST 2017]; root of context hierarchy
+2017-10-16 17:15:32.288  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroConfiguration' of type [com.springboot.server.pictureserver.config.ShiroConfiguration$$EnhancerBySpringCGLIB$$d8a7f656] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.351  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'credentialsMatcher' of type [org.apache.shiro.authc.credential.HashedCredentialsMatcher] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.398  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'databaseConfig' of type [com.springboot.server.pictureserver.config.DatabaseConfig$$EnhancerBySpringCGLIB$$abc4e6e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.460  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'getDataSource' of type [com.alibaba.druid.pool.DruidDataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.694  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionFactory' of type [org.apache.ibatis.session.defaults.DefaultSqlSessionFactory] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.726  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'sqlSessionTemplate' of type [org.mybatis.spring.SqlSessionTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.726  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [org.mybatis.spring.mapper.MapperFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.726  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userMapper' of type [com.sun.proxy.$Proxy56] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.726  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'userServiceImpl' of type [com.springboot.server.pictureserver.service.impl.UserServiceImpl] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:32.726  INFO 6780 --- [main] org.apache.shiro.realm.AuthorizingRealm  : No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+2017-10-16 17:15:32.726  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authRealm' of type [com.springboot.server.pictureserver.realm.AuthRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:33.916  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'shiroEhcacheManager' of type [org.apache.shiro.cache.ehcache.EhCacheManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:33.916  INFO 6780 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Cache with name 'com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache' does not yet exist.  Creating now.
+2017-10-16 17:15:33.932  INFO 6780 --- [main] o.a.shiro.cache.ehcache.EhCacheManager   : Added EhCache named [com.springboot.server.pictureserver.realm.AuthRealm.authorizationCache]
+2017-10-16 17:15:33.947  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'securityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:34.026  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'annotationDrivenTransactionManager' of type [org.springframework.jdbc.datasource.DataSourceTransactionManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:34.042  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:34.042  INFO 6780 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$625ca236] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-10-16 17:15:34.413  INFO 6780 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8081 (http)
+2017-10-16 17:15:34.428  INFO 6780 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2017-10-16 17:15:34.428  INFO 6780 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2017-10-16 17:15:34.818  INFO 6780 --- [localhost-startStop-1] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2017-10-16 17:15:34.834  INFO 6780 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-10-16 17:15:34.834  INFO 6780 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3589 ms
+2017-10-16 17:15:35.039  INFO 6780 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-10-16 17:15:35.055  INFO 6780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-10-16 17:15:35.055  INFO 6780 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'shiroFilter' to: [/*]
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/fileUpload],methods=[POST]}" onto public com.springboot.server.pictureserver.model.ResultVo com.springboot.server.pictureserver.controller.UploadImagesController.fileUpload(org.springframework.web.multipart.MultipartFile,java.lang.Integer)
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UploadImagesController.indexJsp()
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/add]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.add(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/update]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.update(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/delete]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.delete(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/query]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.query(com.springboot.server.pictureserver.model.User)
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/login]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.login()
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/loginUser]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.loginUser(java.lang.String,java.lang.String,javax.servlet.http.HttpSession)
+2017-10-16 17:15:35.234  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/logOut]}" onto public java.lang.String com.springboot.server.pictureserver.controller.UserController.logOut(javax.servlet.http.HttpSession)
+2017-10-16 17:15:35.250  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-10-16 17:15:35.250  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-10-16 17:15:35.281  INFO 6780 --- [main] c.s.s.pictureserver.config.WebAppConfig  : imagesPath=file:/E:/pictureserver/images/
+2017-10-16 17:15:35.281  INFO 6780 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/images/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-10-16 17:15:35.343  INFO 6780 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@146044d7: startup date [Mon Oct 16 17:15:31 CST 2017]; root of context hierarchy
+2017-10-16 17:15:35.408  INFO 6780 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in mvcException
+2017-10-16 17:15:36.720  INFO 6780 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-10-16 17:15:36.720  INFO 6780 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'getDataSource' has been autodetected for JMX exposure
+2017-10-16 17:15:36.720  INFO 6780 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'getDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=getDataSource,type=DruidDataSource]
+2017-10-16 17:15:37.040  INFO 6780 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8081 (http)
+2017-10-16 17:15:37.045  INFO 6780 --- [main] c.s.s.p.PictureServerApplication         : Started PictureServerApplication in 6.153 seconds (JVM running for 6.728)
+2017-10-16 17:15:47.953  INFO 6780 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-10-16 17:15:47.953  INFO 6780 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-10-16 17:15:47.994  INFO 6780 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2017-10-16 17:16:03.828  INFO 6780 --- [http-nio-8081-exec-4] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2017-10-16 17:16:04.091 ERROR 6780 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Could not resolve view with name 'index' in servlet with name 'dispatcherServlet'] with root cause
+
+javax.servlet.ServletException: Could not resolve view with name 'index' in servlet with name 'dispatcherServlet'
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1266) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) ~[tomcat-embed-websocket-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:61) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.executeChain(AdviceFilter.java:108) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AdviceFilter.doFilterInternal(AdviceFilter.java:137) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.ProxiedFilterChain.doFilter(ProxiedFilterChain.java:66) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.executeChain(AbstractShiroFilter.java:449) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter$1.call(AbstractShiroFilter.java:365) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.SubjectCallable.doCall(SubjectCallable.java:90) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.SubjectCallable.call(SubjectCallable.java:83) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.subject.support.DelegatingSubject.execute(DelegatingSubject.java:383) ~[shiro-core-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.AbstractShiroFilter.doFilterInternal(AbstractShiroFilter.java:362) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.shiro.web.servlet.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:125) ~[shiro-web-1.2.2.jar:1.2.2]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-4.3.11.RELEASE.jar:4.3.11.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198) ~[tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:80) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:799) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1457) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) [na:1.8.0_111]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) [na:1.8.0_111]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-8.5.20.jar:8.5.20]
+	at java.lang.Thread.run(Unknown Source) [na:1.8.0_111]
+

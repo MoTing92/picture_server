@@ -80,7 +80,7 @@
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
   
-  <select id="query" resultType="com.springboot.server.pictureserver.model.User" parameterType="com.springboot.server.pictureserver.model.User">
+  <select id="query" resultMap="BaseResultMap" parameterType="com.springboot.server.pictureserver.model.User">
   	select * from user 
   	<where>
   		<if test="realNmae != null">

@@ -11,7 +11,6 @@ import org.apache.ibatis.annotations.Update;
 import com.springboot.server.pictureserver.model.User;
 
 
-@Mapper
 public interface UserMapper {
     
 	@Select("select * from user")

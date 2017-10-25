@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<!-- <classPathEntry location="F:\.m2\repository\mysql\mysql-connector-java\5.1.38\mysql-connector-java-5.1.38.jar"/> -->
+	
+    <context id="MySqlContext" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+        <commentGenerator>
+            <property name="suppressDate" value="true"/>
+            <property name="addRemarkComments" value="true"/>
+        </commentGenerator>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/customer"
+                        userId="moting"
+                        password="moting">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.springboot.server.pictureserver.model" targetProject="src\main\java">
+            <property name="trimStrings" value="false" />
+            <!-- <property name="rootClass" value="tk.mybatis.simple.model.BaseEntity" /> -->
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapper"  targetProject="src\main\resources"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.springboot.server.pictureserver.mapper"  targetProject="src\main\java"/>
+
+        <!-- <table tableName="CM_CUST">
+            <generatedKey column="CUST_ID" sqlStatement="MySql"/>
+        </table>
+        <table tableName="CM_ACCT">
+            <generatedKey column="ACCT_ID" sqlStatement="MySql"/>
+        </table>
+        <table tableName="CM_CUST_VERIRY">
+            <generatedKey column="CUST_TEMP_ID" sqlStatement="MySql"/>
+        </table>
+        
+        <table tableName="SUBS_USER">
+            <generatedKey column="SUBS_ID" sqlStatement="MySql"/>
+        </table>      
+        
+        <table tableName="SUBS_PRODUCT">
+            <generatedKey column="SUBS_PRODUCT_ID" sqlStatement="MySql"/>
+        </table>
+        <table tableName="SUBS_PRODUCT_ELEMENT">
+            <generatedKey column="SUBS_ELEMENT_ID" sqlStatement="MySql"/>
+        </table>
+        <table tableName="SUBS_COMM">
+            <generatedKey column="SUBS_ELEMENT_ID" sqlStatement="MySql"/>
+        </table>
+        <table tableName="SUBS_BASIC_PROD">
+            <generatedKey column="SUBS_OFFER_PROD_ID" sqlStatement="MySql"/>
+        </table> 
+        <table tableName="SUBS_BASIC_OFFER">
+            <generatedKey column="SUBS_ELEMENT_ID" sqlStatement="MySql"/>
+        </table>     --> 
+        <table tableName="cm_receive_addr">
+            <generatedKey column="PWD_PROTECT_ID" sqlStatement="MySql"/>
+        </table>       
+        
+    </context>
+</generatorConfiguration>
